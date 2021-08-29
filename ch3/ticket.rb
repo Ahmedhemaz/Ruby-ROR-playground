@@ -1,12 +1,22 @@
 # modeling Ticket
 class Ticket
+  attr_reader :venue, :date
+
+  def initialize(venue, date)
+    puts 'Ticket initializer'
+    @venue = venue
+    @date = date
+  end
+
   def event
     puts "Can't really be specified yet..."
   end
 end
 
-obj = Ticket.new
+obj = Ticket.new('Ruby', '29/8/2021')
 obj.event
+puts obj.venue
+puts obj.date
 
 puts '=====================Over riding methods========================'
 # Over riding class methods
