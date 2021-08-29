@@ -15,3 +15,15 @@ puts "The publisher is #{magazine.publisher} and the editor is #{magazine.editor
 
 class Ezine < Magazine
 end
+
+puts '================  Anonymous classes  ========================='
+
+c = Class.new do
+  def say_hello
+    puts 'Hello!'
+  end
+end
+
+my_instance = c.new
+
+my_instance.say_hello
