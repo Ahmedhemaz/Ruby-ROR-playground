@@ -13,7 +13,7 @@ obj.multi_args 1, 2, 3
 
 puts '==============================Sponge args==============================='
 # syntax error as optional can't be to the right of sponge args
-def broken_args(x,*y,z=1)
+# def broken_args(x,*y,z=1)
 end
 
 puts '==============================one arg exception==============================='
