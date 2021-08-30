@@ -57,7 +57,7 @@ class C
 end
 obj.q # will print the new added q method
 
-puts '=================max method adding methods to the class Ticket as it\'s an object of Class ==========================='
+puts '=================max method adding methods to the class Ticket as it\'s an object of Class =========='
 
 # def Ticket.most_expensive(*tickets)
 #   tickets.max_by(&:price)
