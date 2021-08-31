@@ -65,6 +65,5 @@ Hybird.add_brand('Honda')
 Hybird.add_brand('Ford')
 h3 = Hybird.new('Honda')
 f2 = Hybird.new('Ford')
-
 puts " Car Class total_count = #{Car.total_count}"
 puts " Hybird Class total_count = #{Hybird.total_count}"

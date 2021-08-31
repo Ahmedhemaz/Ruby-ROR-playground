@@ -32,6 +32,5 @@ Car.add_brand('Ford')
 h = Car.new('Honda')
 f = Car.new('Ford')
 h2 = Car.new('Honda')
-
 puts f.make_mates
 # nono = Car.new('OH NO') # will throw an error
