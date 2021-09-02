@@ -6,7 +6,7 @@ end
 
 begin
   raise MyCustomException
-rescue StandardError => e
+rescue MyCustomException => e
   puts e.backtrace
   puts e.message
 end
