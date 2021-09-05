@@ -1,3 +1,5 @@
+require '../ch4/first_module'
+
 class Banner
   attr_accessor :text
 
@@ -19,7 +21,14 @@ class Banner
 end
 
 banner = Banner.new('Hello World!')
-puts(+banner)
-puts(-banner)
-puts !banner
-puts (not banner)
+
+class Banner
+  include FirstModule
+
+  def added_method
+    puts 'added_method check'
+  end
+end
+
+puts banner.methods.sort
+puts banner.methods.include?(:ruby_version)
