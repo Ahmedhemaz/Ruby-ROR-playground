@@ -19,3 +19,29 @@ puts string # "Ruby is a great language"
 
 string['Ruby is a great language'] = 'lala'
 puts string
+
+# Enter your code here
+
+def strike(str)
+  "<strike>#{str}</strike>"
+end
+
+def mask_article(str, words_arr)
+  words_arr.each { |word| str[word] = strike(word) }
+  puts str
+end
+
+mask_article('Joy fond many ham high seen this.', %w[fond ham])
+
+def prime?(num)
+  is_prime = true
+  (2...num).each do |n|
+    if num % n == 0
+      is_prime = false
+      break
+    end
+  end
+  is_prime
+end
+
+puts prime? 22
